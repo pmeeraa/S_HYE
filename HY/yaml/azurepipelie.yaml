@@ -17,7 +17,7 @@ steps:
       wget https://downloads.lambdatest.com/concierge/darwin/concierge 
       chmod u+x concierge
       
-      ./concierge -u  meerap -k I9ADikrjXtd5i0yOXOtjmRQRSpcA5ng6PxIvHwEuWvNtQ8CTWd --config HY/yaml/mac/testng_hyperexecute_autosplit_sample.yaml
+      ./concierge -u  meerap -k I9ADikrjXtd5i0yOXOtjmRQRSpcA5ng6PxIvHwEuWvNtQ8CTWd -i hyperexecuteStatic.yaml
 
 
 
