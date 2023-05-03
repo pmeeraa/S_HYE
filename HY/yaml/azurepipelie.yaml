@@ -1,0 +1,26 @@
+# Maven
+
+# Build your Java project and run tests with Apache Maven.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/java
+
+trigger:
+  - main
+
+pool:
+  vmImage: ubuntu-18.04
+
+steps:
+
+  - script: |
+      echo %LT_BUILD_NAME%   
+      wget https://downloads.lambdatest.com/hyperexecute/linux/hyperexecute
+      chmod u+x hyperexecute
+      
+      ./hyperexecute -u  meerap -k I9ADikrjXtd5i0yOXOtjmRQRSpcA5ng6PxIvHwEuWvNtQ8CTWd -i  testng_hyperexecute_autosplit_sample.yaml
+      current_folder=$(basename `pwd`)
+      mv $current_folder systemtests
+
+
+  - script: |
+      echo "Test"
