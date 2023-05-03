@@ -17,7 +17,7 @@ steps:
       curl -O https://downloads.lambdatest.com/hyperexecute/linux/hyperexecute
       chmod u+x hyperexecute
       ls -la
-      ./hyperexecute -u  meerap -k I9ADikrjXtd5i0yOXOtjmRQRSpcA5ng6PxIvHwEuWvNtQ8CTWd -i .hypertest.yaml --verbose --download-artifacts --force-clean-artifacts
+      ./hyperexecute -u  meerap -k I9ADikrjXtd5i0yOXOtjmRQRSpcA5ng6PxIvHwEuWvNtQ8CTWd -i hypertest.yaml --verbose --download-artifacts --force-clean-artifacts
 
 
   - script: |
