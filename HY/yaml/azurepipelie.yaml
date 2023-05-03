@@ -15,11 +15,13 @@ steps:
   - script: |
       echo %LT_BUILD_NAME%   
       wget https://downloads.lambdatest.com/concierge/darwin/concierge 
+      current_folder=$(basename `pwd`)
+      mv $current_folder systemtests
       chmod u+x concierge
       chmod u+x concierge
       
       ./concierge -u  meerap -k I9ADikrjXtd5i0yOXOtjmRQRSpcA5ng6PxIvHwEuWvNtQ8CTWd -i hyperexecuteStatic.yaml
-
+      
 
 
   - script: |
