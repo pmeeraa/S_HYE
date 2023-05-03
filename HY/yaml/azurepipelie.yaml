@@ -8,15 +8,15 @@ trigger:
   - main
 
 pool:
-  vmImage: macos latest
+  vmImage: ubuntu-22.04
 
 steps:
 
   - script: |
       echo %LT_BUILD_NAME%
-      wget https://downloads.lambdatest.com/hyperexecute/darwin/hyperexecute
+      curl -O https://downloads.lambdatest.com/hyperexecute/linux/hyperexecute
       chmod u+x hyperexecute
-      chmod u+x hyperexecute
+      ls -la
       ./hyperexecute -u  meerap -k I9ADikrjXtd5i0yOXOtjmRQRSpcA5ng6PxIvHwEuWvNtQ8CTWd -i .hypertest.yaml --verbose --download-artifacts --force-clean-artifacts
 
 
