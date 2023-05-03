@@ -15,8 +15,6 @@ steps:
   - script: |
       echo %LT_BUILD_NAME%
       wget https://downloads.lambdatest.com/hyperexecute/darwin/hyperexecute
-      current_folder=$(basename `pwd`)
-      mv $current_folder systemtests
       chmod u+x hyperexecute
       chmod u+x hyperexecute
       ./hyperexecute -u  meerap -k I9ADikrjXtd5i0yOXOtjmRQRSpcA5ng6PxIvHwEuWvNtQ8CTWd -i .hypertest.yaml --verbose --download-artifacts --force-clean-artifacts
