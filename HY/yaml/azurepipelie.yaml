@@ -17,7 +17,7 @@ steps:
       wget https://downloads.lambdatest.com/hyperexecute/linux/hyperexecute
       chmod u+x hyperexecute
       
-      ./hyperexecute -u  meerap -k I9ADikrjXtd5i0yOXOtjmRQRSpcA5ng6PxIvHwEuWvNtQ8CTWd -i  testng_hyperexecute_autosplit_sample.yaml
+      ./hyperexecute -u  meerap -k I9ADikrjXtd5i0yOXOtjmRQRSpcA5ng6PxIvHwEuWvNtQ8CTWd -i  HY/yaml/mac/testng_hyperexecute_autosplit_sample.yaml
       current_folder=$(basename `pwd`)
       mv $current_folder systemtests
 
