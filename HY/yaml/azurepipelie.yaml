@@ -8,13 +8,13 @@ trigger:
   - main
 
 pool:
-  vmImage: ubuntu-22.04
+  vmImage: macos latest
 
 steps:
 
   - script: |
       echo %LT_BUILD_NAME%   
-      wget https://downloads.lambdatest.com/concierge/linux/concierge
+      wget https://downloads.lambdatest.com/concierge/darwin/concierge 
       chmod u+x concierge
       
       ./concierge -u  meerap -k I9ADikrjXtd5i0yOXOtjmRQRSpcA5ng6PxIvHwEuWvNtQ8CTWd --config HY/yaml/mac/testng_hyperexecute_autosplit_sample.yaml
