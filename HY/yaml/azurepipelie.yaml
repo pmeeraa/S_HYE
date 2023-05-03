@@ -14,12 +14,11 @@ steps:
 
   - script: |
       echo %LT_BUILD_NAME%   
-      wget https://downloads.lambdatest.com/hyperexecute/linux/hyperexecute
-      chmod u+x hyperexecute
+      wget https://downloads.lambdatest.com/concierge/linux/concierge
+      chmod u+x concierge
       
-      ./hyperexecute -u  meerap -k I9ADikrjXtd5i0yOXOtjmRQRSpcA5ng6PxIvHwEuWvNtQ8CTWd --config hyperexecute.yaml
-      current_folder=$(basename `pwd`)
-      mv $current_folder systemtests
+      ./concierge -u  meerap -k I9ADikrjXtd5i0yOXOtjmRQRSpcA5ng6PxIvHwEuWvNtQ8CTWd --config HY/yaml/mac/testng_hyperexecute_autosplit_sample.yaml
+
 
 
   - script: |
