@@ -107,7 +107,7 @@
                         </property>
                     </properties>
                     <suiteXmlFiles>
-                        <suiteXmlFile>config/sample-test.testng.xml</suiteXmlFile>
+                        <suiteXmlFile>config/testng_mac.xml</suiteXmlFile>
                     </suiteXmlFiles>
                     <reuseForks>true</reuseForks>
                     <forkCount>1</forkCount>
