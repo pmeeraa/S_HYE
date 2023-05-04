@@ -107,7 +107,7 @@
                         </property>
                     </properties>
                     <suiteXmlFiles>
-                        <suiteXmlFile>yaml/testng_mac.xml</suiteXmlFile>
+                        <suiteXmlFile>hypertest.yaml</suiteXmlFile>
                     </suiteXmlFiles>
                     <reuseForks>true</reuseForks>
                     <forkCount>1</forkCount>
